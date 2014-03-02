@@ -1,0 +1,5 @@
+D:\Work\HoC\HoC.Common\bin\Debug\HoC.Common.dll
+D:\Work\HoC\HoC.Common\bin\Debug\HoC.Common.pdb
+D:\Work\HoC\HoC.Common\obj\Debug\HoC.Common.csprojResolveAssemblyReference.cache
+D:\Work\HoC\HoC.Common\obj\Debug\HoC.Common.dll
+D:\Work\HoC\HoC.Common\obj\Debug\HoC.Common.pdb

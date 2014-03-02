@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b5d719d5-f961-49b9-af7b-c9b916169d1b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8010/HoCCacheService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HoCCacheService.xsd" MetadataType="Schema" ID="4704a73f-3487-4286-ae85-ece02dc22654" SourceId="1" SourceUrl="http://localhost:8010/HoCCacheService?xsd=xsd5" />
+    <MetadataFile FileName="HoCCacheService1.xsd" MetadataType="Schema" ID="0d2a345f-ea8a-412c-9353-3b9503710e8a" SourceId="1" SourceUrl="http://localhost:8010/HoCCacheService?xsd=xsd4" />
+    <MetadataFile FileName="HoCCacheService2.xsd" MetadataType="Schema" ID="8b31c467-450f-427c-80c1-83f73856de7a" SourceId="1" SourceUrl="http://localhost:8010/HoCCacheService?xsd=xsd1" />
+    <MetadataFile FileName="HoCCacheService3.xsd" MetadataType="Schema" ID="fd19f589-9d10-4940-9a3c-ec41405ad041" SourceId="1" SourceUrl="http://localhost:8010/HoCCacheService?xsd=xsd2" />
+    <MetadataFile FileName="HoCCacheService4.xsd" MetadataType="Schema" ID="f28dd773-d79c-482a-bf86-cba227593283" SourceId="1" SourceUrl="http://localhost:8010/HoCCacheService?xsd=xsd3" />
+    <MetadataFile FileName="HoCCacheService5.xsd" MetadataType="Schema" ID="f8d57645-012c-474d-897b-4f4006465c91" SourceId="1" SourceUrl="http://localhost:8010/HoCCacheService?xsd=xsd0" />
+    <MetadataFile FileName="HoCCacheService.disco" MetadataType="Disco" ID="6197fc50-f73f-4f0f-96fb-e3efe91f5db4" SourceId="1" SourceUrl="http://localhost:8010/HoCCacheService?disco" />
+    <MetadataFile FileName="CacheService.wsdl" MetadataType="Wsdl" ID="06a1a51a-a65e-4801-b4bf-3138670b64c4" SourceId="1" SourceUrl="http://localhost:8010/HoCCacheService?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

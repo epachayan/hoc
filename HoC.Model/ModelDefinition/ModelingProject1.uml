@@ -1,0 +1,1080 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="76d42d3a-5be8-4e95-97b5-2001120e3326"
+  name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="ab1a8133-a5d4-4ba9-8d04-c971c01b820b"
+        name="Client Applications"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="5d8d7242-9eea-4252-aa39-5bb026925abb">
+            <useCaseMoniker
+              Id="ab5587dc-eeed-40e1-9a93-1e12bc14746f"
+              LastKnownName="Store Cache"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+          <dependency
+            Id="c24b5d77-c2fe-4011-930e-eddd39dca91f">
+            <useCaseMoniker
+              Id="c0bf12e1-daf3-46a8-81ad-3281f72856a1"
+              LastKnownName="Retrieve Cache"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="6c0b3d74-d94f-4d4d-8e46-9ba288c532b3"
+        name="HoC Client"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="4fec76bc-4bc4-4286-b1f5-d9922bc7c6c0">
+            <subsystemMoniker
+              Id="2592af21-5024-48b7-b709-5ee30b2968f1"
+              LastKnownName="HoC Server"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ab5587dc-eeed-40e1-9a93-1e12bc14746f"
+        name="Store Cache"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="7b75c3ba-6183-437a-8b78-8bde27361d59">
+            <useCaseMoniker
+              Id="223c6aa9-2b76-4a6a-b445-cf0a7479c205"
+              LastKnownName="Node Resolver"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+          <dependency
+            Id="cce666a2-0aa5-4dbd-a219-986f6cd9aebc">
+            <useCaseMoniker
+              Id="bc03b23c-0140-4073-85c5-9da38db1bc77"
+              LastKnownName="Serialization / Compression"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="6c0b3d74-d94f-4d4d-8e46-9ba288c532b3"
+            LastKnownName="HoC Client"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c0bf12e1-daf3-46a8-81ad-3281f72856a1"
+        name="Retrieve Cache"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="f9617e6f-31a2-46d2-ac61-45c0926770b3">
+            <useCaseMoniker
+              Id="223c6aa9-2b76-4a6a-b445-cf0a7479c205"
+              LastKnownName="Node Resolver"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+          <dependency
+            Id="3f68c0f3-3341-4df5-bc97-fc2a65f75941">
+            <useCaseMoniker
+              Id="bc03b23c-0140-4073-85c5-9da38db1bc77"
+              LastKnownName="Serialization / Compression"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="6c0b3d74-d94f-4d4d-8e46-9ba288c532b3"
+            LastKnownName="HoC Client"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ce76350a-185d-4d89-b978-3067b470a039"
+        name="Heart Beat Generate"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="2592af21-5024-48b7-b709-5ee30b2968f1"
+            LastKnownName="HoC Server"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="366d7e2b-bef3-4f36-9dcb-f456c963d8d8"
+        name="UseCase1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="cfa1e756-f664-45dd-9c62-0708ae4f1865"
+        name="Node 1"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="f09c9f60-6c86-4f18-99e8-793f4c99cdf7">
+            <subsystemMoniker
+              Id="2592af21-5024-48b7-b709-5ee30b2968f1"
+              LastKnownName="HoC Server"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="c05cabfe-3e23-49d8-86de-29fe308046b8"
+        name="Node 2"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="ade3bedf-1492-4a8c-93f5-144ed6383ad5">
+            <subsystemMoniker
+              Id="2592af21-5024-48b7-b709-5ee30b2968f1"
+              LastKnownName="HoC Server"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="396f0f97-b14b-480a-b196-0a19b3e91341"
+        name="Node n"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="d5cebb8b-1fcc-41a2-9fe1-720d53b5df83">
+            <subsystemMoniker
+              Id="2592af21-5024-48b7-b709-5ee30b2968f1"
+              LastKnownName="HoC Server"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2bbcd237-2b0c-46e3-9fa4-18eb54f4a62a"
+        name="HeartBeat Listen"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="8db9cb8f-ed7e-4a3f-a796-20f35428a570"
+            isDerived="false"
+            sourceEndRoleName="HeartBeat Listen"
+            targetEndRoleName="Node Resolver"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="223c6aa9-2b76-4a6a-b445-cf0a7479c205"
+              LastKnownName="Node Resolver"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b20e2972-d79e-4e98-b94c-4d183dff145a"
+                  name="HeartBeat Listen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="447b6433-f425-405b-aea3-febc7e0f91ae"
+                  name="Node Resolver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="6c0b3d74-d94f-4d4d-8e46-9ba288c532b3"
+            LastKnownName="HoC Client"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="2592af21-5024-48b7-b709-5ee30b2968f1"
+        name="HoC Server"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="867e92f4-3afa-44c2-a962-a2ecb8c8fa8d">
+            <useCaseMoniker
+              Id="ce76350a-185d-4d89-b978-3067b470a039"
+              LastKnownName="Heart Beat Generate"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d5b512b9-0c32-47fe-a2c2-29254a066c09"
+        name="Sync Cache Store"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="2592af21-5024-48b7-b709-5ee30b2968f1"
+            LastKnownName="HoC Server"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="223c6aa9-2b76-4a6a-b445-cf0a7479c205"
+        name="Node Resolver"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6c0b3d74-d94f-4d4d-8e46-9ba288c532b3"
+            LastKnownName="HoC Client"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="42fcafa1-691a-42b1-86e9-851a0d9019b9"
+        name="Service Host"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="163de7af-35d4-451a-a828-3b6f2e21b4c6">
+            <useCaseMoniker
+              Id="1abf0974-d02e-4095-9fc4-6fbb056a751f"
+              LastKnownName="Health Monitor"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="5a8171ce-cc2b-44a9-9c40-14dcbec88186"
+            isDerived="false"
+            sourceEndRoleName="Service Host"
+            targetEndRoleName="Cache Store"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d5b512b9-0c32-47fe-a2c2-29254a066c09"
+              LastKnownName="Sync Cache Store"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="815d7c01-9608-4dcf-847d-0387694e3984"
+                  name="Service Host"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ab04e20a-4793-4026-bad5-b849da9324a5"
+                  name="Cache Store"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="2592af21-5024-48b7-b709-5ee30b2968f1"
+            LastKnownName="HoC Server"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="81e2653d-c659-45f6-be2f-72c9510c08c7"
+        name="UseCase2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d58c3379-cd57-445f-879a-30be06b38849"
+        name="LRU Eviction Strategy"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="7e99e6af-ba08-470c-be1b-113bca5ccdf3"
+            isDerived="false"
+            sourceEndRoleName="Eviction Strategy"
+            targetEndRoleName="Cache Store"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d5b512b9-0c32-47fe-a2c2-29254a066c09"
+              LastKnownName="Sync Cache Store"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="75c6fd1a-86b1-458e-8468-b64fc259b1dd"
+                  name="Eviction Strategy"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d848a7fd-2287-4653-99f6-a9ba1bc3de28"
+                  name="Cache Store"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="2592af21-5024-48b7-b709-5ee30b2968f1"
+            LastKnownName="HoC Server"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bc03b23c-0140-4073-85c5-9da38db1bc77"
+        name="Serialization / Compression"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6c0b3d74-d94f-4d4d-8e46-9ba288c532b3"
+            LastKnownName="HoC Client"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5030976e-9b82-45fa-b6bd-ba505a56dadc"
+        name="Compact/Compress"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="e33eb6ac-18cc-4817-875b-a22e36dff267"
+        name="HoC Dashboard"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e6780118-b9a2-4c0f-b92e-aa8a87c1d955"
+        name="UseCase3"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="0d946e26-7be8-465c-b528-47da9724892c"
+        name="Admin"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="56126a84-bf75-469c-9f7d-6fef18c13af7">
+            <useCaseMoniker
+              Id="27f2e289-ab99-40d3-bb85-45d9abca92b9"
+              LastKnownName="Active Node Track"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+          <dependency
+            Id="826913db-dbac-4af5-a396-9369fe79030a">
+            <useCaseMoniker
+              Id="ccd4fe76-b1a5-4e0e-9155-f4379688e140"
+              LastKnownName="Node Load Track"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+          <dependency
+            Id="a6bb6bbf-5de5-4014-b3ca-514d295641be">
+            <useCaseMoniker
+              Id="e967484e-d89f-410e-a546-1ccdb1cc293b"
+              LastKnownName="Node Object Eviction Status Track"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+          <dependency
+            Id="dc947ba0-20f2-4d21-b604-7c23e89b2b4b">
+            <useCaseMoniker
+              Id="b2605f54-b553-448a-988f-30bb3468a794"
+              LastKnownName="Service Config"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="27f2e289-ab99-40d3-bb85-45d9abca92b9"
+        name="Active Node Track"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="975c901c-01ca-4792-884f-0b035285b0de"
+            isDerived="false"
+            sourceEndRoleName="Active Node Track"
+            targetEndRoleName="HeartBeat Listen"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2d8e91ee-6e99-43aa-acc2-6f850adb7303"
+              LastKnownName="HeartBeat Listen"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7e46089a-c47c-4945-aeaa-cf6719fe2b37"
+                  name="Active Node Track"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="90ee8921-c7fd-44c0-a454-e3a6ad5148e0"
+                  name="HeartBeat Listen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="e33eb6ac-18cc-4817-875b-a22e36dff267"
+            LastKnownName="HoC Dashboard"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ccd4fe76-b1a5-4e0e-9155-f4379688e140"
+        name="Node Load Track"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="7514a612-a843-41f4-b244-c74400a7bf79"
+            isDerived="false"
+            sourceEndRoleName="Node Load Track"
+            targetEndRoleName="DataStore"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="583d037e-eeeb-4854-86bd-339e6baff5f7"
+              LastKnownName="DataStore"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b8d10537-5ea7-4bd4-bc20-48512445b592"
+                  name="Node Load Track"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="be726752-5b94-4888-91ad-26c401524a23"
+                  name="DataStore"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="478bfe2e-fc32-4d8b-8449-dd8e221334db"
+            isDerived="false"
+            sourceEndRoleName="Node Load Track"
+            targetEndRoleName="Memory"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="32f51b0a-ea37-49ac-b8c1-1c4db5f8c808"
+              LastKnownName="Memory"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e1cc9e8d-5fa7-420f-92e9-534a05b57a63"
+                  name="Node Load Track"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="80ba44da-fe4b-4e14-9e60-1fea06a604d7"
+                  name="Memory"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="e33eb6ac-18cc-4817-875b-a22e36dff267"
+            LastKnownName="HoC Dashboard"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e967484e-d89f-410e-a546-1ccdb1cc293b"
+        name="Node Object Eviction Status Track"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="e33eb6ac-18cc-4817-875b-a22e36dff267"
+            LastKnownName="HoC Dashboard"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="583d037e-eeeb-4854-86bd-339e6baff5f7"
+        name="DataStore"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="e33eb6ac-18cc-4817-875b-a22e36dff267"
+            LastKnownName="HoC Dashboard"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="32f51b0a-ea37-49ac-b8c1-1c4db5f8c808"
+        name="Memory"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="e33eb6ac-18cc-4817-875b-a22e36dff267"
+            LastKnownName="HoC Dashboard"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b2605f54-b553-448a-988f-30bb3468a794"
+        name="Service Config"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="e33eb6ac-18cc-4817-875b-a22e36dff267"
+            LastKnownName="HoC Dashboard"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2d8e91ee-6e99-43aa-acc2-6f850adb7303"
+        name="HeartBeat Listen"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="e33eb6ac-18cc-4817-875b-a22e36dff267"
+            LastKnownName="HoC Dashboard"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1abf0974-d02e-4095-9fc4-6fbb056a751f"
+        name="Health Monitor"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="2592af21-5024-48b7-b709-5ee30b2968f1"
+            LastKnownName="HoC Server"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="49f97820-d3b9-4d54-8aff-4ad194038757"
+        name="Cache Persistance"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="270c2b20-79ec-4d84-b6c5-688917a1e2b2"
+        name="Cache reload on node restart"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="9c823cf2-d53b-47d8-ac9e-8184fff9fd99"
+            isDerived="false"
+            sourceEndRoleName="Server Restart - Data Load"
+            targetEndRoleName="Cache Persistance"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="49f97820-d3b9-4d54-8aff-4ad194038757"
+              LastKnownName="Cache Persistance"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="99d18e54-1670-49e1-a5ae-0b651f5a01e3"
+                  name="Server Restart - Data Load"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f6228a00-55af-4061-8e83-b3ac437aed94"
+                  name="Cache Persistance"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b06025dd-e371-4a24-ab0f-4376ab723514"
+            isDerived="false"
+            sourceEndRoleName="Cache Store reload on node restart"
+            targetEndRoleName="Notify Nodes"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="26777980-e095-4ea0-9cab-7b613eb8ddab"
+              LastKnownName="Notify Nodes"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ee29a7b6-9975-45f7-8cfa-12fe116ab3ad"
+                  name="Cache Store reload on node restart"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f71b7b50-1595-46cb-ba78-0e7795bf3701"
+                  name="Notify Nodes"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="26777980-e095-4ea0-9cab-7b613eb8ddab"
+        name="Notify Nodes"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="67c8a6a2-5fea-42da-b273-1264d05a0313"
+        name="Cache Data Clear - New Active Neighbour Node"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="c01ade40-ad6e-4d95-825b-e37c32cf627e">
+            <useCaseMoniker
+              Id="8cb39517-1457-47b1-a7b4-79a63062c78b"
+              LastKnownName="HeartBeat Listen"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="05f0dd2c-7c06-405d-b87e-62de8d48c21d"
+            isDerived="false"
+            sourceEndRoleName="Cache Data Move/Clear - New Active Neighbour Node"
+            targetEndRoleName="Sync Cache Store"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d5b512b9-0c32-47fe-a2c2-29254a066c09"
+              LastKnownName="Sync Cache Store"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c18bf6ca-2ef6-483c-b5c1-3678e6cd0227"
+                  name="Cache Data Move/Clear - New Active Neighbour Node"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="005bf20a-b464-456a-b997-a1bb4e43e46d"
+                  name="Sync Cache Store"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="2592af21-5024-48b7-b709-5ee30b2968f1"
+            LastKnownName="HoC Server"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="31a3e244-13f8-43da-8780-4ef1ad43e8dc"
+        name="Cache Data Move/Clear -  New Server1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0408c1be-8c55-4187-bd40-815260bb3f35"
+        name="Cache Data Move/Clear -  Service Stop"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="cf4de6b3-a6bd-4512-9e60-1a7b672711fd">
+            <useCaseMoniker
+              Id="ae53a6c3-b369-41a4-b840-263bd7a71597"
+              LastKnownName="Node Resolver&#xD;&#xA;(Neighbour)"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="894daafc-904b-459c-bf17-d0b28eeba2bd"
+            isDerived="false"
+            sourceEndRoleName="Cache Data Move/Clear -  Service Stop"
+            targetEndRoleName="Sync Cache Store"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d5b512b9-0c32-47fe-a2c2-29254a066c09"
+              LastKnownName="Sync Cache Store"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aa1a74a1-765f-4fc3-971f-127bca31f78b"
+                  name="Cache Data Move/Clear -  Service Stop"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="815d1342-702f-4250-9226-77b9e192544f"
+                  name="Sync Cache Store"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8cb39517-1457-47b1-a7b4-79a63062c78b"
+        name="HeartBeat Listen"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="2592af21-5024-48b7-b709-5ee30b2968f1"
+            LastKnownName="HoC Server"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ae53a6c3-b369-41a4-b840-263bd7a71597"
+        name="Node Resolver&#xD;&#xA;(Neighbour)"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="677f9d1a-11e3-4354-b86d-d40d2d0b2c82"
+        name="Least Accessed Eviction Strategy"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="40bfa595-46ff-481e-9f47-b5bb356a0fa5"
+            isDerived="false"
+            sourceEndRoleName="Least Accessed Eviction Strategy"
+            targetEndRoleName="Sync Cache Store"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d5b512b9-0c32-47fe-a2c2-29254a066c09"
+              LastKnownName="Sync Cache Store"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="229a3325-0601-4b77-9219-2c2c85b673a2"
+                  name="Least Accessed Eviction Strategy"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2391685f-4f3e-491c-81cd-13a7125b174e"
+                  name="Sync Cache Store"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="2592af21-5024-48b7-b709-5ee30b2968f1"
+            LastKnownName="HoC Server"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="468b0349-ab06-49ed-81a5-496b563c02fb"
+        name="Shutdown Object move"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="a1dd931a-99aa-4148-ab93-fdb4714b012c">
+            <useCaseMoniker
+              Id="8cb39517-1457-47b1-a7b4-79a63062c78b"
+              LastKnownName="HeartBeat Listen"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="2592af21-5024-48b7-b709-5ee30b2968f1"
+            LastKnownName="HoC Server"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

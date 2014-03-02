@@ -1,0 +1,1 @@
+*/"Microsoft.FileSystem.ProcessFile"("D:\Work\HoC\HoC.Server.Core\bin\Debug\HoC.Server.dll")/ + FilePath.Equals("D:\Work\HoC\HoC.Server.Core\bin\Debug\HoC.Server.dll")/"LayerDesigner.LoadArchitecture"/ */"Microsoft.AllNodes"

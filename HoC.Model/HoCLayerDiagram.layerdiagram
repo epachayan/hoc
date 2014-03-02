@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="13ef3a50-fa53-4955-8e61-37a5bc707328" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="3330e0d1-21ba-4b41-88d7-52adfed7da50" name="Client Application Layer">
+      <childLayers>
+        <layer Id="86da58df-8a94-41b5-b3a9-5bb344de5e7d" name="Cache Access Layer">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="d285413a-5a3f-4157-ab99-aefe7986ecf7" direction="Forward">
+              <layerMoniker Id="cfe1e385-48d5-4ece-ae23-c3699fee81db" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="bfde5fce-7b98-4157-b414-44b0cb40d212" direction="Forward">
+              <layerMoniker Id="dde035c5-3e26-4f2b-9dad-c10b410c1ac7" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="42ef0d15-5efa-44e8-946e-957437883d5d" name="HoC.Client">
+              <ArtifactNode Label="HoC.Client" Category="CodeSchema_Project" Id="(Assembly=../HoC.Client/HoC.Client.csproj)">
+                <Category Ref="CodeSchema_SourceFile" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=HoC.Client)" Label="HoC.Client.dll" Category="FileSystem.Category.FileOfType.dll">
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+      <references>
+        <reference Id="b56593cd-956f-4e74-be91-4a4439652f3c" name="TestClientApp">
+          <ArtifactNode Label="TestClientApp" Category="CodeSchema_Project" Id="(Assembly=../TestClientApp/TestClientApp.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=TestApp)" Label="TestApp.exe" Category="FileSystem.Category.FileOfType.exe">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="89976c7d-1ac4-45e9-aab9-92e1cb7e7476" name="HoC.Test">
+          <ArtifactNode Label="HoC.Test" Category="CodeSchema_Project" Id="(Assembly=../HoC.Test/HoC.Test.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=TestProject1)" Label="TestProject1.dll" Category="FileSystem.Category.FileOfType.dll">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="cfe1e385-48d5-4ece-ae23-c3699fee81db" name="Server Cache Host Layer">
+      <childLayers>
+        <layer Id="578266ca-56e6-4a40-9c2d-6d652a6f2915" name="Server Cache Layer">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="5cf18b74-129a-4f97-9e2f-7425059cda3d" direction="Forward">
+              <layerMoniker Id="dde035c5-3e26-4f2b-9dad-c10b410c1ac7" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="aa3317b7-7a0d-4acf-8480-527bf54c717d" name="HoC.Server.Core">
+              <ArtifactNode Label="HoC.Server.Core" Category="CodeSchema_Project" Id="(Assembly=../HoC.Server.Core/HoC.Server.Core.csproj)">
+                <Category Ref="CodeSchema_SourceFile" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=HoC.Server)" Label="HoC.Server.dll" Category="FileSystem.Category.FileOfType.dll">
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+      <references>
+        <reference Id="04fff4ec-79be-4547-8398-da532c20d864" name="HoC.Server.Host.Console">
+          <ArtifactNode Label="HoC.Server.Host.Console" Category="CodeSchema_Project" Id="(Assembly=../HoC.Server.Host.Console/HoC.Server.Host.Console.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=HoC.Server.Host.Console)" Label="HoC.Server.Host.Console.exe" Category="FileSystem.Category.FileOfType.exe">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="b968815e-e719-4b37-b1cf-ad89492ca87e" name="HoC.Server.Host.WinService">
+          <ArtifactNode Label="HoC.Server.Host.WinService" Category="CodeSchema_Project" Id="(Assembly=../HoC.Server.Host.WinService/HoC.Server.Host.WinService.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=HoC.Server.Host.WinService)" Label="HoC.Server.Host.WinService.exe" Category="FileSystem.Category.FileOfType.exe">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="dde035c5-3e26-4f2b-9dad-c10b410c1ac7" name="Common Layer">
+      <references>
+        <reference Id="b2e1c7c8-17fd-45df-9015-b0e85a22c74b" name="HoC.Common">
+          <ArtifactNode Label="HoC.Common" Category="CodeSchema_Project" Id="(Assembly=../HoC.Common/HoC.Common.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=HoC.Common)" Label="HoC.Common.dll" Category="FileSystem.Category.FileOfType.dll">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="73b634da-7a93-4d4e-b991-aaaacef99b8b" name="Monitor Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="28d13eac-caa3-468e-8a03-6d09c631baad" direction="Forward">
+          <layerMoniker Id="dde035c5-3e26-4f2b-9dad-c10b410c1ac7" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="9b751cde-21fb-4ff3-964d-d86ceb232f9e" name="HoC.Dashboard">
+          <ArtifactNode Label="HoC.Dashboard" Category="CodeSchema_Project" Id="(Assembly=../HoC.Dashboard/HoC.Dashboard.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=HoC.Dashboard)" Label="HoC.Dashboard.exe" Category="FileSystem.Category.FileOfType.exe">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>

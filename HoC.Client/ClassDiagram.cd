@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="HoC.Common.ConsistentHash">
+    <Position X="6" Y="0.5" Width="3" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HoC.Common.HashNodeResolver">
+    <Position X="6" Y="3.25" Width="5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="HoC.Common.NodeListEmptyException" Collapsed="true">
+    <Position X="10.5" Y="1.75" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="HoC.Common.Hasher">
+    <Position X="12" Y="2.75" Width="3" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="HoC.Common.TcpHelper">
+    <Position X="12" Y="4.25" Width="2.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="HoC.Client.ObjectInstancePool&lt;W&gt;">
+    <Position X="7.75" Y="0.75" Width="2.5" />
+    <NestedTypes>
+      <Delegate Name="HoC.Client.ObjectInstancePool&lt;W&gt;.AsyncMethodCaller" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ObjectInstancePool.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgABAAQAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>ObjectInstancePool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoC.Client.Cache">
+    <Position X="1" Y="0.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAABAABAACCACAKAAAACBAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Cache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

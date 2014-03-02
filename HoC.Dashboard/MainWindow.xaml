@@ -1,0 +1,28 @@
+﻿<Window x:Class="HoC.Dashboard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="HoC Dashboard v1.0.0.0" Loaded="Window_Loaded" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="350" Width="525">
+        <DockPanel LastChildFill="True">
+        <StatusBar Name="statusBar" DockPanel.Dock="Bottom">
+            <StatusBarItem>
+                <TextBlock x:Name="MessageTextBlock">Ready</TextBlock>
+            </StatusBarItem>
+        </StatusBar>
+        <Grid Name="grid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="100" Width="127"/>
+                <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            <TreeView Name="tvNodes" UseLayoutRounding="False" SelectedItemChanged="tvNodes_SelectedItemChanged" Grid.Column="0" MouseRightButtonUp="tvNodes_MouseRightButtonUp">
+            </TreeView>
+                <GridSplitter Name="gridSplitter" Width="4" Grid.Column="0"/>
+            <Popup Name="Popup" HorizontalAlignment="Left" VerticalAlignment="Top" Placement="MousePoint">
+                <Button Content="Prepare for Shutdown" Name="Shutdown" Click="Shutdown_Click"/>
+            </Popup>
+            <DataGrid Name="dgProperties" DataContext="{Binding}" GridLinesVisibility="Vertical" HeadersVisibility="All" Grid.Column="1"
+                  Background="LightGray" RowBackground="LightYellow"
+AlternatingRowBackground="LightBlue" BorderBrush="Gray" BorderThickness="5" IsReadOnly="True"/>
+            
+        </Grid>
+    </DockPanel>
+</Window>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="@2" Category="Node.Error" ErrorLevel="Warning" Description="AV3001 : Missing Link : Layer 'Client Application Layer' links to 'TestApp' which cannot be found. Are you missing an assembly reference?" Label="Validation Warning: Unresolved Reference" />
+    <Node Id="3330e0d1-21ba-4b41-88d7-52adfed7da50" Category="Dsl.Layer" Dsl.ForbiddenNamespaceDependencies="" Dsl.ForbiddenNamespace="" Dsl.RequiredNamespace="" Dsl.QualifiedName="Client Application Layer" Visibility="Hidden" Label="Client Application Layer" />
+    <Node Id="13ef3a50-fa53-4955-8e61-37a5bc707328" Category="Dsl.LayerModel" Dsl.DiagramPath="D:\Work\HoC\HoC.Model\HoCLayerDiagram.layerdiagram" Dsl.QualifiedName="" Visibility="Hidden" Label="HoCLayerDiagram" />
+    <Node Id="@4" Category="Node.Error" ErrorLevel="Warning" Description="AV3001 : Missing Link : Layer 'Client Application Layer' links to 'TestProject1' which cannot be found. Are you missing an assembly reference?" Label="Validation Warning: Unresolved Reference" />
+  </Nodes>
+  <Links>
+    <Link Source="@2" Target="3330e0d1-21ba-4b41-88d7-52adfed7da50" Category="LayerDesigner.ErrorSource" IsHiddenInNavigation="True" />
+    <Link Source="@2" Target="13ef3a50-fa53-4955-8e61-37a5bc707328" Category="LayerDesigner.ErrorLayerModel" IsHiddenInNavigation="True" />
+    <Link Source="@4" Target="3330e0d1-21ba-4b41-88d7-52adfed7da50" Category="LayerDesigner.ErrorSource" IsHiddenInNavigation="True" />
+    <Link Source="@4" Target="13ef3a50-fa53-4955-8e61-37a5bc707328" Category="LayerDesigner.ErrorLayerModel" IsHiddenInNavigation="True" />
+  </Links>
+  <Categories>
+    <Category Id="Dsl.Layer" Label="Layer" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="Layer" />
+    <Category Id="Dsl.LayerModel" Label="Layer Model" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="Layer Model" />
+    <Category Id="LayerDesigner.ErrorLayerModel" Label="Error" BasedOn="Link.Error" OutgoingActionLabel="Error" IncomingActionLabel="Error" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" />
+    <Category Id="LayerDesigner.ErrorSource" Label="Error" BasedOn="Link.Error" OutgoingActionLabel="Error" IncomingActionLabel="Error" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" />
+    <Category Id="Link.Error" Label="Error" OutgoingActionLabel="Error" IncomingActionLabel="Error" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" />
+    <Category Id="Node.Error" Label="Error" NavigationActionLabel="Error" IsProviderRoot="False" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" />
+  </Categories>
+  <Properties>
+    <Property Id="ErrorLevel" Label="Error Level" Description="Used to associate an error level with a node or link in the graph" Group="Analysis" DataType="Microsoft.VisualStudio.Progression.ErrorLevel" />
+    <Property Id="Description" Label="Description" Description="Description" DataType="System.String" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="Dsl.ForbiddenNamespaceDependencies" DataType="System.String" />
+    <Property Id="Dsl.ForbiddenNamespace" DataType="System.String" />
+    <Property Id="Dsl.RequiredNamespace" DataType="System.String" />
+    <Property Id="Dsl.QualifiedName" DataType="System.String" />
+    <Property Id="Visibility" Label="Visibility" Description="Defines whether a node in the graph is visible or not" DataType="System.Windows.Visibility" />
+    <Property Id="Dsl.DiagramPath" DataType="System.String" />
+    <Property Id="IsHiddenInNavigation" DataType="System.Boolean" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="ErrorName" Label="ErrorName" ValueType="System.String" />
+    <Name Id="LayerNode" Label="LayerNode" ValueType="Microsoft.VisualStudio.GraphModel.GraphNodeId" />
+    <Name Id="Artifact" Label="Artifact" ValueType="Microsoft.VisualStudio.GraphModel.GraphNodeId" />
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=TestApp" />
+    <Alias n="2" Id="(ErrorName=ReferenceValidationWarning LayerNode=3330e0d1-21ba-4b41-88d7-52adfed7da50 Artifact=(@1))" />
+    <Alias n="3" Uri="Assembly=TestProject1" />
+    <Alias n="4" Id="(ErrorName=ReferenceValidationWarning LayerNode=3330e0d1-21ba-4b41-88d7-52adfed7da50 Artifact=(@3))" />
+  </IdentifierAliases>
+</DirectedGraph>

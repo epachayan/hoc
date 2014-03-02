@@ -1,0 +1,13 @@
+D:\Work\HoC\HoC.Test.Harness\bin\Debug\HoC.Test.Harness.exe.config
+D:\Work\HoC\HoC.Test.Harness\bin\Debug\HoC.Test.Harness.exe
+D:\Work\HoC\HoC.Test.Harness\bin\Debug\HoC.Test.Harness.pdb
+D:\Work\HoC\HoC.Test.Harness\bin\Debug\HoC.Client.dll
+D:\Work\HoC\HoC.Test.Harness\bin\Debug\HoC.Common.dll
+D:\Work\HoC\HoC.Test.Harness\bin\Debug\HoC.Client.pdb
+D:\Work\HoC\HoC.Test.Harness\bin\Debug\HoC.Common.pdb
+D:\Work\HoC\HoC.Test.Harness\obj\x86\Debug\HoC.Test.Harness.csprojResolveAssemblyReference.cache
+D:\Work\HoC\HoC.Test.Harness\obj\x86\Debug\HoC.Test.Harness.QuickTest.resources
+D:\Work\HoC\HoC.Test.Harness\obj\x86\Debug\HoC.Test.Harness.Properties.Resources.resources
+D:\Work\HoC\HoC.Test.Harness\obj\x86\Debug\HoC.Test.Harness.csproj.GenerateResource.Cache
+D:\Work\HoC\HoC.Test.Harness\obj\x86\Debug\HoC.Test.Harness.exe
+D:\Work\HoC\HoC.Test.Harness\obj\x86\Debug\HoC.Test.Harness.pdb

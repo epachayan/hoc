@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{43DA52CA-1DF8-4901-80D8-582EE30DB12F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HoC.Server</RootNamespace>
+    <AssemblyName>HoC.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CacheItemRelocator.cs" />
+    <Compile Include="Eviction\Evictor.cs" />
+    <Compile Include="Eviction\IEvictionStrategy.cs" />
+    <Compile Include="Eviction\LeastAccessedEvictionStrategy.cs" />
+    <Compile Include="Eviction\LRUEvictionStrategy.cs" />
+    <Compile Include="Service References\CacheServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service\CacheService.cs" />
+    <Compile Include="HeartBeat.cs" />
+    <Compile Include="Service\ICacheService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HoC.Common\HoC.Common.csproj">
+      <Project>{C99CAC7F-ABCF-4759-BF58-40D4359E1C89}</Project>
+      <Name>HoC.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram.cd" />
+    <None Include="Properties\DataSources\HoC.Common.CacheHealth.datasource" />
+    <None Include="Properties\DataSources\HoC.Common.ClientCacheItem.datasource" />
+    <None Include="Service References\CacheServiceReference\CacheService.wsdl" />
+    <None Include="Service References\CacheServiceReference\HoCCacheService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CacheServiceReference\HoCCacheService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CacheServiceReference\HoCCacheService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CacheServiceReference\HoCCacheService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CacheServiceReference\HoCCacheService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CacheServiceReference\HoCCacheService6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CacheServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CacheServiceReference\HoCCacheService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CacheServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CacheServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CacheServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

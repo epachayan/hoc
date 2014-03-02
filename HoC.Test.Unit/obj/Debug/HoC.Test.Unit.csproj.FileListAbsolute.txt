@@ -1,0 +1,13 @@
+D:\Work\HoC\HoC.Test.Unit\bin\Debug\TestProject1.dll
+D:\Work\HoC\HoC.Test.Unit\bin\Debug\TestProject1.pdb
+D:\Work\HoC\HoC.Test.Unit\bin\Debug\HoC.Client.dll
+D:\Work\HoC\HoC.Test.Unit\bin\Debug\HoC.Common.dll
+D:\Work\HoC\HoC.Test.Unit\bin\Debug\HoC.Client.pdb
+D:\Work\HoC\HoC.Test.Unit\bin\Debug\HoC.Common.pdb
+D:\Work\HoC\HoC.Test.Unit\bin\Debug\HoC.Client_Accessor.dll
+D:\Work\HoC\HoC.Test.Unit\bin\Debug\HoC.Client_Accessor.pdb
+D:\Work\HoC\HoC.Test.Unit\obj\Debug\HoC.Test.Unit.csprojResolveAssemblyReference.cache
+D:\Work\HoC\HoC.Test.Unit\obj\Debug\HoC.Test.Harness.QuickTest.resources
+D:\Work\HoC\HoC.Test.Unit\obj\Debug\HoC.Test.Unit.csproj.GenerateResource.Cache
+D:\Work\HoC\HoC.Test.Unit\obj\Debug\TestProject1.dll
+D:\Work\HoC\HoC.Test.Unit\obj\Debug\TestProject1.pdb
